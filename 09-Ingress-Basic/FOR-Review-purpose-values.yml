@@ -454,7 +454,7 @@ controller:
   ## With this new hook, we increased the default terminationGracePeriodSeconds from 30 seconds
   ## to 300, allowing the draining of connections up to five minutes.
   ## If the active connections end before that, the pod will terminate gracefully at that time.
-  ## To efectively take advantage of this feature, the Configmap feature
+  ## To effectively take advantage of this feature, the Configmap feature
   ## worker-shutdown-timeout new value is 240s instead of 10s.
   ##
   lifecycle:
