@@ -36,10 +36,10 @@ public class CustomUserDetails implements UserDetails {
 														.map(role -> new SimpleGrantedAuthority("ROLE_"+role.getRole()))
 														.collect(Collectors.toList());*/
 		 
-		List<SimpleGrantedAuthority> roledetails = user.getRoles()
-					.stream()
-					.map(role -> new SimpleGrantedAuthority("ROLE_ADMIN"))
-					.collect(Collectors.toList());
+                List<SimpleGrantedAuthority> roledetails = user.getRoles()
+                                        .stream()
+                                        .map(role -> new SimpleGrantedAuthority("ROLE_" + role.getRole()))
+                                        .collect(Collectors.toList());
 		 
 		 log1.info("Retruning role details from CustomUserDetails class");
 		 
